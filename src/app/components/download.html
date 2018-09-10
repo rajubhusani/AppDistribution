@@ -1,71 +1,76 @@
 <div class="main">
-        <div class="main_block">
-          <div class="center_block">
-            <div class="logo">
-              <img class="logo_style" src="../assets/images/fab_grow_stronger.png" />
-              <div class="divs">
-                  <mat-radio-group [(ngModel)]="selectedPlatform">
-                      <mat-radio-button  value="Android" (change)="radioChange($event)" checked>Android</mat-radio-button>
-                      <mat-radio-button value="iOS" (change)="radioChange($event)">iOS</mat-radio-button>
-                    </mat-radio-group>          
-              </div>
-              <div style="display: inline-block;">
-                  <button mat-raised-button class="theme" (click)="moveToHistory()">Build History</button>
-              </div>       
+  <div class="main_block">
+    <div class="center_block">
+      <div fxLayout="row" fxLayoutAlign="none center">
+        <div fxFlex="15%"><img class="logo_style" /></div>        
+      </div>
+      <div fxLayout="row" fxLayoutAlign="none center">
+          <div fxFlex="15%"></div>
+          <div fxFlex ="70%"  >
+              <mat-radio-group [(ngModel)]="selectedPlatform">
+                <mat-radio-button value="Android" (change)="radioChange($event)" checked>Android</mat-radio-button>
+                <mat-radio-button value="iOS" (change)="radioChange($event)">iOS</mat-radio-button>
+              </mat-radio-group>
+          </div>
+          <div fxFlex="15%">
+              <button mat-raised-button class="theme" (click)="moveToHistory()">Build History</button>
+          </div>
+      </div>
+      <div class="page">
+        <div class="topbar">
+          <div class="icon">
+            <div class="icon_style">
+              <img class="app_icon">
             </div>
-      
-            <div class="page">
-              <div class="topbar">
-                <div class="icon">
-                  <div class="icon_style">
-                    <img src="../assets/images/app_icon.png" style="width: 10em;">
-                  </div>
+          </div>
+          <div class="title_background">
+            <div class="title_inner">
+              <div class="title">
+                <h1 class="title_style" itemprop="name">
+                  <span>FAB Mobile Banking</span></h1>
+                <div class="version">
+                  <h3>1.0</h3>
                 </div>
-                <div class="title_background">
-                  <div class="title_inner">
-                    <div class="title">
-                      <h1 class="title_style" itemprop="name">
-                        <span>FAB Mobile Banking</span></h1>
-                      <div class="version">
-                        <h3>1.0</h3>
-                      </div>
-                    </div>
-                    <div class="install_block">
-                      <div class="install_row">
-                          <button mat-raised-button class="theme" (click)="downloadBuild()"><mat-icon>cloud_download</mat-icon> Install</button>
-                        <!-- <a id="anchor_build" class="waves-effect waves-light btn blue darken-4 z-depth-3" href="builds/app-release.apk"><i
+              </div>
+              <div class="install_block">
+                <div class="install_row">
+                  <button mat-raised-button class="theme" (click)="downloadBuild()">
+                    <!-- <mat-icon>cloud_download</mat-icon> -->
+                     Install
+                  </button>
+                  <!-- <a id="anchor_build" class="waves-effect waves-light btn blue darken-4 z-depth-3" href="builds/app-release.apk"><i
                             class="material-icons right">cloud_download</i>Install</a> -->
-                        <!-- <button class="button" onclick="location.href='builds/app-debug.apk'">Install</button> -->
-                      </div>
-                    </div>
-      
-                  </div>
-      
+                  <!-- <button class="button" onclick="location.href='builds/app-debug.apk'">Install</button> -->
                 </div>
               </div>
-      
-              <div class="release">
-                <div class="whats_new">
-                  <h2>What's New</h2>
-                </div>
-                <div jscontroller="IsfMIf" jsaction="rcuQ6b:npT2md" class="PHBdkd" data-content-height="144" jsshadow="">
-                  <div jsname="bN97Pc" class="DWPxHb Vkfede" itemprop="description">
-                    <content>Release notes comes here</content>
-                    <div jsname="WgKync" class="uwAgLc"></div>
-                  </div>
-                  <div class="OsWJFb" jsname="XNVrM" jsaction="JIbuQc:KoToPc">
-                    <div role="button" class="U26fgb O0WRkf oG5Srb C0oVfc n9lfJ" jscontroller="VXdfxd" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefaul"></div>
-                  </div>
-                </div>
-              </div>
-              <div class="border"></div>
-              <div class="additional_block">
-                <div class="wSaTQd">
-                  <h2 class="Rm6Gwb">Additional Information</h2>
-                </div>
-                <div></div>
-              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="release">
+          <div class="whats_new">
+            <h2>What's New</h2>
+          </div>
+          <div jscontroller="IsfMIf" jsaction="rcuQ6b:npT2md" class="PHBdkd" data-content-height="144" jsshadow="">
+            <div jsname="bN97Pc" class="DWPxHb Vkfede" itemprop="description">
+              <content>Release notes comes here</content>
+              <div jsname="WgKync" class="uwAgLc"></div>
+            </div>
+            <div class="OsWJFb" jsname="XNVrM" jsaction="JIbuQc:KoToPc">
+              <div role="button" class="U26fgb O0WRkf oG5Srb C0oVfc n9lfJ" jscontroller="VXdfxd" jsaction="click:cOuCgd; mousedown:UX7yZ; mouseup:lbsD7e; mouseenter:tfO1Yc; mouseleave:JywGue;touchstart:p6p2H; touchmove:FwuNnf; touchend:yfqBxc(preventMouseEvents=true|preventDefaul"></div>
             </div>
           </div>
         </div>
+        <div class="border"></div>
+        <div class="additional_block">
+          <div class="wSaTQd">
+            <h2 class="Rm6Gwb">Additional Information</h2>
+          </div>
+          <div></div>
+        </div>
       </div>
+    </div>
+  </div>
+</div>

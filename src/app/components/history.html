@@ -1,14 +1,16 @@
 <div class="main">
     <div class="main_block">
         <div class="center_block">
-            <div class="logo">
-                <img class="logo_style" src="../assets/images/fab_grow_stronger.png" />
+            <div class="row" fxLayoutAlign="none center">
+                    <div fxFlex="15%">
+                <img class="logo_style"  /></div>
+                <div fxFlex="85%">
                 <div style="display: inline-block; text-align: right; width: 80%;">
                         <button mat-raised-button class="theme" (click)="moveToHome()">Back</button>
-                    </div> 
+                    </div> </div>
             </div>
             <div class="page_create_history">
-                <h5 align="left" style="font-size: 1.5em;margin: 0.5em;">Android Mobile Banking Builds</h5>
+                <h5 align="left" style="font-size: 1.3em;margin: 0.5em;">Android Mobile Banking Builds</h5>
                 <div class="mat-elevation-z8">
                 <table mat-table [dataSource]="dataSource" style="width: 100%;">
                     <ng-container matColumnDef="version">

@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 export class DownloadComponent {
   title = 'AppDistribution';
   selectedPlatform: string;
-  buildUrl : string = "";
+  buildUrl : string = "https://172.20.219.72/builds/app-release.apk";
 
   constructor(
     private router: Router){
@@ -18,9 +18,9 @@ export class DownloadComponent {
   radioChange(event: MatRadioChange){
     console.log(event.value); 
     if(event.value === 'Android'){
-      this.buildUrl = "../../assets/builds/app-release.apk";
+      this.buildUrl = "https://172.20.219.72/builds/app-release.apk";
     }else  if(event.value === 'iOS'){
-      this.buildUrl = "../../assets/builds/app-release.ipa";
+      this.buildUrl = "https://172.20.219.72/builds/app-release.ipa";
     }   
     console.log(this.buildUrl); 
   }

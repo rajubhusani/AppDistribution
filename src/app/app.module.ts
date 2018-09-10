@@ -10,6 +10,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { RouterModule, Routes, Router } from '@angular/router';
 
+import { FlexLayoutModule } from '@angular/flex-layout';
+
 const appRoutes: Routes = [
   { path: '',  component: DownloadComponent },
   { path: 'history', component: HistoryComponent }
@@ -26,7 +28,8 @@ const appRoutes: Routes = [
     BrowserModule,
     BrowserAnimationsModule,
     MaterialModule,
-    FormsModule   
+    FormsModule,
+    FlexLayoutModule    
   ],
   providers: [],
   bootstrap: [AppComponent],

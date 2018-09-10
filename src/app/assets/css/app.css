@@ -1,0 +1,201 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+.main{
+    height: 100%;
+    background-image:url("../images/new-brand-bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.main_block{
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    display: table;
+    height: -webkit-calc(100% - 138px);
+    height: calc(100% - 138px);
+    overflow-x: hidden;
+    width: 100%;
+}
+.center_block{
+    display: table-cell;
+    text-align: center;
+    
+}
+[type="radio"]:checked+span:after, [type="radio"].with-gap:checked+span:after {
+    background-color: #002f87 !important;
+    border-color: #002f87 !important;
+}
+.divs{
+    display: inline-block;
+    width: 75%;
+    text-align: center;
+}
+.logo{
+    width: 100%;
+    text-align: left;
+    margin: 1em;
+}
+.logo_style{
+    width:10em;
+    content: url("../images/fab_grow_stronger.png");
+}
+.app_icon{
+    width: 10em;
+    content: url("../images/app_icon.png");
+}
+.page{
+    background-color:#f5efef;
+    display: inline-block;
+    width: auto;
+    vertical-align: top;
+    border-radius: 20px;
+    border-color: #999
+}
+.page_create{
+    background-color: #f5efef;
+    display: inline-block;
+    width: auto;
+    padding: 1em 3em 1em 3em;
+    vertical-align: top;
+    border-radius: 20px;
+}
+.page_create_history{
+    background-color: #f5efef;
+    display: inline-block;
+    width: 80%;
+    padding: 1em 3em 1em 3em;
+    vertical-align: top;
+    border-radius: 20px;
+}
+.topbar{
+    display: table;
+    margin-bottom: 40px;
+    width: 100%;
+}
+.icon{
+    display: table-cell;
+    vertical-align: top;
+}
+.icon_style{
+    margin: 25px 25px 0 25px;
+    background-size: contain;
+    width: 180px;
+}
+.title_background{
+    height: 1px;
+    padding-right: 30px;
+    width: auto;
+}
+.title_inner{
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.title{
+    display: table-row;
+}
+.title .title_style{
+    color: #212121;
+    font-size: 1.3rem;
+    margin: 2rem 0 1rem 0;
+    /* font-weight: 300; */
+    /* line-height: 35px; */
+    /* margin: 38px 0 10px 0; */
+    text-align: left;
+}
+.version{
+    color: #616161;
+    display: table;
+    margin-bottom: 5px;
+    width: 100%;
+    text-align: left;
+}
+.version h3{
+    font-size: 1.3rem;
+    margin: 0.5rem 0 0.5rem 0;
+}
+.release{
+    background: #f5efef;
+    display: block;
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 0 50px 0 50px;
+    position: relative;
+    text-align: left;
+}
+.whats_new{
+    overflow: hidden;
+}
+.whats_new h2{
+    color: #212121;
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.DWPxHb.Vkfede {
+    max-height: none;
+}
+.border{
+    border-bottom: 1px solid #eaeaea;
+    margin: 30px 25px;
+    width: auto;
+}
+.additional_block{
+    background: #f5efef;
+    display: block;
+    font-size: 1.5em;
+    line-height: 24px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    padding: 0 50px 0 50px;
+    position: relative;
+    text-align: left;
+}
+.Rm6Gwb {
+    color: #212121;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+.install_block{
+    display: table;
+    height: 100%;
+    width: 100%;
+}
+.install_row{
+    display: table-cell;
+    vertical-align: bottom;
+    text-align: left;
+}
+.install_row .button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.3em;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #f5efef;
+    background-color: #3e578e;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 5px #999;
+  }
+  
+  .install_row .button:hover {background-color: #3e578e}
+  
+  .install_row .button:active {
+    background-color: #002f87;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  .theme{
+      background: #002f87 !important;
+      color: white;
+  }
