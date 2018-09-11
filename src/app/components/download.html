@@ -2,18 +2,19 @@
   <div class="main_block">
     <div class="center_block">
       <div fxLayout="row" fxLayoutAlign="none center">
-        <div fxFlex="15%"><img class="logo_style" /></div>        
+        <div fxFlex="15%"><img class="logo_style" /></div>         
+        <div fxFlex="85%" fxLayoutAlign="end start">
+            <button mat-raised-button class="theme" (click)="moveToHistory()">Build History</button>
+        </div>       
       </div>
       <div fxLayout="row" fxLayoutAlign="none center">
           <div fxFlex="15%"></div>
           <div fxFlex ="70%"  >
               <mat-radio-group [(ngModel)]="selectedPlatform">
-                <mat-radio-button value="Android" (change)="radioChange($event)" checked>Android</mat-radio-button>
-                <mat-radio-button value="iOS" (change)="radioChange($event)">iOS</mat-radio-button>
+                <mat-radio-button [value]="platform" *ngFor="let platform of platforms" (change)="radioChange($event)">
+                  {{platform}}</mat-radio-button>
+                <!-- <mat-radio-button [value]="platform" (change)="radioChange($event)">iOS</mat-radio-button> -->
               </mat-radio-group>
-          </div>
-          <div fxFlex="15%">
-              <button mat-raised-button class="theme" (click)="moveToHistory()">Build History</button>
           </div>
       </div>
       <div class="page">
