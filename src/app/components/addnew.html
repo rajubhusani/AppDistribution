@@ -1,0 +1,45 @@
+<div class="main">
+    <div class="main_block">
+        <div class="center_block">
+            <div class="logo">
+                <img class="logo_style" />
+            </div>
+            <div class="page_create">
+                <mat-label>Create App</mat-label>
+                <div class="example-container fields-container">
+                    <mat-form-field [floatLabel]="options.value.floatLabel">
+                        <input matInput placeholder="Simple placeholder" required>
+                    </mat-form-field>
+                    <mat-form-field>
+                        <input matInput placeholder="AppName">
+                    </mat-form-field>
+
+                    <mat-form-field>
+                        <textarea matInput placeholder="Description"></textarea>
+                    </mat-form-field>
+
+                    <mat-form-field>
+                        <input matInput placeholder="Package Name">
+                    </mat-form-field>
+                    <!-- <p>Select Event: {{fileSelectMsg}}</p>
+                    <p>Upload Event: {{fileUploadMsg}}</p>
+                    <td-file-upload #singleFileUpload [(ngModel)]="files" (select)="selectEvent($event)" (upload)="uploadEvent($event)"
+                        (cancel)="cancelEvent()" [disabled]="disabled" required>
+                        <mat-icon>file_upload</mat-icon><span>{{ singleFileUpload.value?.name }}</span>
+                        <ng-template td-file-input-label>
+                            <mat-icon>attach_file</mat-icon>
+                            <span>
+                                Choose a file...
+                                <span [hidden]="!singleFileUpload?.required">*</span></span>
+                        </ng-template>
+                    </td-file-upload> -->
+
+                    <mat-form-field>
+                        <button matInput mat-raised-button class="theme">
+                            Create</button>
+                    </mat-form-field>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
