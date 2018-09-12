@@ -1,0 +1,8 @@
+{
+    "androidVersion":"1.0 (50)",
+    "iosVersion":"1.0 (60)",
+    "androidReleaseNotes":"Release Notes1",
+    "iosReleaseNotes":"Release Notes2",
+    "androidUrl":"https://172.20.219.72/BuildsData/builds/app-release.apk",
+    "iosUrl": "itms-services://?action=download-manifest&amp;url=https://172.20.219.72/BuildsData/builds/application.plist"
+}

@@ -2,6 +2,7 @@ import { Injectable } from "@angular/core";
 import { HttpClient, HttpHeaders } from "@angular/common/http";
 import { Observable } from "rxjs";
 import { BuildsHistory } from "../components/history";
+import { catchError, map, tap } from 'rxjs/operators';
 
 const httpOptions = {
     headers: new HttpHeaders({
@@ -21,6 +22,11 @@ export class DataService{
 
     getiOSBuildsHistory(): Observable<any>{
         return this.http.get<BuildsHistory[]>("https://172.20.219.72/BuildsData/iosbuilds.json", httpOptions);
+    }
+
+    getCurrentVersion(): Observable<any>{
+        return this.http.get<any>("https://172.20.219.72/BuildsData/currentbuild.json", httpOptions)
+        
     }
 
 }
